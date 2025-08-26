@@ -111,7 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="105dp"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-medium"
             android:textStyle="bold"
@@ -162,7 +162,7 @@
             app:srcCompat="@drawable/mastercard_logo_wine" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/simboloChip"
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"

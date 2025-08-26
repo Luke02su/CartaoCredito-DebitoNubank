@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
                 val limitado = if (texto.length > 4) texto.substring(0, 4) else texto
 
                 if (texto.length < 4) {
-                    editTextValidade.error = "A validade deve conter no formato MM/AA."
+                    editTextValidade.error = "A validade deve estar no formato MM/AA."
                 }
 
                 val formatado = when {
