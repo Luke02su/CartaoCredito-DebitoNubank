@@ -1,16 +1,3 @@
 <resources>
     <string name="app_name">Cartão Nubank</string>
-
-    <string name="cardContainer">cardContainer</string>
-
-    <string name="cardFront">cardFront</string>
-    <string name="name">Name</string>
-    <string name="logoNubank">Logo Nubank</string>
-    <string name="logoMastercard">logoMastercard</string>
-
-    <string name="cardBack">cardBack</string>
-
-
-
-    <string name="numero">numero</string>
 </resources>
