@@ -120,8 +120,6 @@
             android:textColor="#C0C0C0" />
     </androidx.cardview.widget.CardView>
 
-    </FrameLayout>
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardFront"
         android:layout_width="350dp"
@@ -171,4 +169,5 @@
             android:layout_marginTop="50dp"
             app:srcCompat="@drawable/icons8_chip_do_cart_o_sim_80" />
     </androidx.cardview.widget.CardView>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
