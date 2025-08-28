@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_marginTop="18dp"
-            android:background="@android:color/white" />
+            android:background="@android:color/black" />
 
         <EditText
             android:id="@+id/numero"
@@ -117,10 +117,21 @@
             android:textStyle="bold"
             android:text="platinum"
             android:textSize="14sp"
-            android:textColor="#C0C0C0" />
-    </androidx.cardview.widget.CardView>
+            android:textColor="#C0C0C0"
+            android:shadowColor="#80C0C0C0"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
 
-    </FrameLayout>
+        <ImageView
+            android:id="@+id/simboloMastercardCinza"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/simbolomastercardcinza" />
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardFront"
@@ -153,7 +164,7 @@
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="7dp"
-            app:srcCompat="@drawable/untitled" />
+            app:srcCompat="@drawable/nubank_icon_white" />
 
         <ImageView
             android:id="@+id/logoMastercard"
@@ -161,15 +172,15 @@
             android:layout_height="54dp"
             android:layout_gravity="end"
             android:layout_marginEnd="5dp"
-            app:srcCompat="@drawable/mastercard_logo_wine" />
+            app:srcCompat="@drawable/mastercard_logo" />
 
         <ImageView
             android:id="@+id/simboloChip"
             android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="50dp"
-            app:srcCompat="@drawable/icons8_chip_do_cart_o_sim_80" />
+            android:layout_marginTop="49dp"
+            app:srcCompat="@drawable/simbolo_chip" />
 
         <ImageView
             android:id="@+id/simboloAproximacao"
@@ -179,4 +190,5 @@
             android:layout_marginTop="62dp"
             app:srcCompat="@drawable/aproximacao" />
     </androidx.cardview.widget.CardView>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
