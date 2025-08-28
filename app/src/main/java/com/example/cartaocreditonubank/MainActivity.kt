@@ -6,6 +6,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.FrameLayout
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.isVisible
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         // EditTexts
@@ -112,7 +114,14 @@ class MainActivity : AppCompatActivity() {
                 val texto = s.toString().replace("/", "")
                 val limitado = if (texto.length > 4) texto.substring(0, 4) else texto
 
-                if (texto.length < 4) {
+                if (texto.length >= 2) {
+                    val mes = texto.substring(0, 2).toIntOrNull()
+                    if (mes == null || mes !in 1..12) {
+                        editTextValidade.error = "A validade deve estar no formato MM/AA."
+                    } else if (texto.length < 4) {
+                        editTextValidade.error = "A validade deve estar no formato MM/AA."
+                    }
+                } else {
                     editTextValidade.error = "A validade deve estar no formato MM/AA."
                 }
 
